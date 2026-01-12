@@ -1,39 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Em manutenção</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .box {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin-bottom: 10px;
-        }
-        p {
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Grandevento — Em Manutenção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 48px 40px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin: 0 0 24px;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      margin: 24px 0;
+    }
+
+    .contact {
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .contact a:hover {
+      border-bottom-color: #ffffff;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Site em manutenção</h1>
-        <p>Estamos a trabalhar para lançar o nosso novo site.</p>
-        <p>Voltamos em breve.</p>
+
+  <div class="card">
+    <div class="logo">Grandevento</div>
+
+    <h1>Estamos a preparar algo novo</h1>
+
+    <p>
+      O nosso site encontra-se temporariamente em manutenção.<br>
+      Estamos a trabalhar para apresentar uma nova experiência em breve.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="contact">
+      Para qualquer contacto urgente:<br>
+      <a href="mailto:geral@grandevento.pt">geral@grandevento.pt</a>
     </div>
+
+    <footer>
+      © 2026 Grandevento. Todos os direitos reservados.
+    </footer>
+  </div>
+
 </body>
 </html>
