@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: jokasman/jokasman.github.io
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "home"
+    label: "Página Inicial"
+    files:
+      - file: "content/home.json"
+        label: "Conteúdos da Home"
+        name: "home"
+        fields:
+          - { label: "Título Principal", name: "hero_title", widget: "string" }
+          - { label: "Subtítulo", name: "hero_subtitle", widget: "text" }
+          - { label: "Texto Hero", name: "hero_text", widget: "text" }
+          - { label: "Imagem Hero", name: "hero_image", widget: "image" }
+
+          - label: "Serviços"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descrição", name: "description", widget: "text" }
+              - { label: "Imagem", name: "image", widget: "image" }
+
+          - { label: "Texto CTA Final", name: "cta_text", widget: "text" }
+          - { label: "Email de Contacto", name: "contact_email", widget: "string" }
