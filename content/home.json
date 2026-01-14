@@ -1,0 +1,22 @@
+{
+  "hero_title": "Soluções completas para eventos",
+  "hero_subtitle": "Do equipamento básico às montagens técnicas mais complexas",
+  "hero_text": "A Grandevento oferece soluções integradas para todos os tipos de eventos, com qualidade, fiabilidade e acompanhamento profissional.",
+  "hero_image": "/assets/images/hero.jpg",
+
+  "services": [
+    {
+      "title": "Eventos Corporativos",
+      "description": "Produção técnica completa para eventos empresariais.",
+      "image": "/assets/images/service1.jpg"
+    },
+    {
+      "title": "Eventos Culturais",
+      "description": "Som, luz e estruturas para espetáculos e festivais.",
+      "image": "/assets/images/service2.jpg"
+    }
+  ],
+
+  "cta_text": "Fale connosco e transforme o seu evento numa experiência memorável.",
+  "contact_email": "geral@grandevento.pt"
+}
