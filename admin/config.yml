@@ -2,12 +2,8 @@ backend:
   name: github
   repo: jokasman/jokasman.github.io
   branch: main
-
-media_folder: "assets/images"
-public_folder: "/assets/images"
-
-media_library:
-  name: uploadcare
+  base_url: https://grandevento-oauth.sousamanueljoao.workers.dev
+  auth_endpoint: /auth
 
 collections:
   - name: "home"
