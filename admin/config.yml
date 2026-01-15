@@ -5,6 +5,12 @@ backend:
   base_url: https://grandevento-oauth.sousamanueljoao.workers.dev
   auth_endpoint: /auth
 
+media_folder: assets/images
+public_folder: /assets/images
+
+media_library:
+  name: uploadcare  
+
 collections:
   - name: "home"
     label: "Página Inicial"
