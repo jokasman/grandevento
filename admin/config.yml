@@ -5,23 +5,25 @@ backend:
   base_url: https://grandevento-oauth.sousamanueljoao.workers.dev
   auth_endpoint: /auth
 
-media_folder: assets/images
-public_folder: /assets/images
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 media_library:
-  name: uploadcare  
+  name: uploadcare
+  config:
+    publicKey: demopublickey
 
 collections:
   - name: "home"
     label: "Página Inicial"
     files:
       - file: "content/home.json"
-        label: "Conteúdos da Home"
+        label: "Conteúdo da Home"
         name: "home"
         fields:
           - { label: "Título Principal", name: "hero_title", widget: "string" }
-          - { label: "Subtítulo", name: "hero_subtitle", widget: "text" }
-          - { label: "Texto Hero", name: "hero_text", widget: "text" }
+          - { label: "Subtítulo", name: "hero_subtitle", widget: "string" }
+          - { label: "Texto", name: "hero_text", widget: "text" }
           - { label: "Imagem Hero", name: "hero_image", widget: "image" }
 
           - label: "Serviços"
@@ -32,5 +34,5 @@ collections:
               - { label: "Descrição", name: "description", widget: "text" }
               - { label: "Imagem", name: "image", widget: "image" }
 
-          - { label: "Texto CTA Final", name: "cta_text", widget: "text" }
+          - { label: "Texto CTA", name: "cta_text", widget: "string" }
           - { label: "Email de Contacto", name: "contact_email", widget: "string" }
