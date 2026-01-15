@@ -2,9 +2,9 @@ backend:
   name: github
   repo: jokasman/jokasman.github.io
   branch: main
+  base_url: https://github.com
+  auth_endpoint: /login/oauth/authorize
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
 
 collections:
   - name: "home"
