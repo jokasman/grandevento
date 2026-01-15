@@ -3,34 +3,18 @@ backend:
   repo: jokasman/jokasman.github.io
   branch: main
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
-
-media_library:
-  name: uploadcare
-  config:
-    publicKey: demopublickey
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "home"
     label: "Página Inicial"
     files:
-      - file: "content/home.json"
-        label: "Conteúdo da Home"
+      - label: "Conteúdo Home"
         name: "home"
+        file: "content/home.json"
         fields:
-          - { label: "Título Principal", name: "hero_title", widget: "string" }
-          - { label: "Subtítulo", name: "hero_subtitle", widget: "string" }
-          - { label: "Texto", name: "hero_text", widget: "text" }
+          - { label: "Título Hero", name: "hero_title", widget: "string" }
+          - { label: "Subtítulo Hero", name: "hero_subtitle", widget: "string" }
+          - { label: "Texto Hero", name: "hero_text", widget: "text" }
           - { label: "Imagem Hero", name: "hero_image", widget: "image" }
-
-          - label: "Serviços"
-            name: "services"
-            widget: "list"
-            fields:
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Descrição", name: "description", widget: "text" }
-              - { label: "Imagem", name: "image", widget: "image" }
-
-          - { label: "Texto CTA", name: "cta_text", widget: "string" }
-          - { label: "Email de Contacto", name: "contact_email", widget: "string" }
