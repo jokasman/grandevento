@@ -2,8 +2,7 @@ backend:
   name: github
   repo: jokasman/jokasman.github.io
   branch: main
-  base_url: https://grandevento-oauth.sousamanueljoao.workers.dev
-  auth_endpoint: /auth
+  github_app_id: 2662208
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
