@@ -2,8 +2,6 @@ backend:
   name: github
   repo: jokasman/jokasman.github.io
   branch: main
-  base_url: https://grandevento-oauth.sousamanueljoao.workers.dev
-  auth_endpoint: /auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
